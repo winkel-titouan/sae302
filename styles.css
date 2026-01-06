@@ -1,0 +1,247 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #364153;
+}
+
+/* TITRES */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 60%;
+    height: 8px;
+    background-image: url("assets/underline.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h2.center::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.no-underline::after {
+    display: none;
+}
+
+.title-center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.magazine-subtitle {
+    margin: 40px 0 25px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.magazine-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.magazine-list li {
+    margin-bottom: 10px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.li {
+    margin-left: 7%;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #EF4035, #B22820);
+    padding: 100px 0;
+}
+
+.hero-content {
+    width: 80%;
+    margin: auto;
+}
+
+.hero p {
+    color: #FFFFFF;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.hero-separator {
+    width: 100px;
+    height: 6px;
+    background-color: #FFFFFF;
+    margin: 30px 0;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.white {
+    color: #fff;
+}
+
+/* GRID */
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 18.1px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* PLACEHOLDERS */
+.placeholder {
+    background: #E0E0E0;
+    border-radius: 12px;
+}
+
+.placeholder.image {
+    height: 300px;
+}
+
+.placeholder.icon {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.placeholder.magazine-cover {
+    height: 400px;
+}
+
+.placeholder.video {
+    width: 70%;
+    height: 400px;
+    margin: 40px auto 0;
+    position: relative;
+}
+
+.play-button {
+    width: 60px;
+    height: 60px;
+    background: #EF4035;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    margin-top: 45px;
+    height: 52px;
+    padding: 0 24px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.primary {
+    background: #EF4035;
+    color: #FFFFFF;
+}
+
+.secondary {
+    border: 1px solid #EF4035;
+    color: #EF4035;
+    background: transparent;
+}
+
+.btn img {
+    width: 18px;
+    height: 18px;
+}
+
+/* VIDEO SECTION */
+.video-section {
+    background: #2B2B2B;
+    padding: 80px 0;
+}
+
