@@ -165,10 +165,7 @@ p {
 }
 
 /* PLACEHOLDERS */
-.placeholder {
-    background: #E0E0E0;
-    border-radius: 12px;
-}
+
 
 .placeholder.image {
     height: 300px;
@@ -245,3 +242,53 @@ p {
     padding: 80px 0;
 }
 
+/* Enhanced design for the magazine image */
+.magazine-image {
+    width: 60%;
+    height: auto;
+    border: 2px solid rgba(204, 204, 204, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    background-color: #f9f9f9;
+    display: block;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+
+/* Added styles for the presentation image */
+.presentation-image {
+    width: 100%;
+    /* Full width of the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow effect */
+    display: block;
+    margin: 0 auto;
+    /* Center the image */
+}
+
+/* Added styles for the video description and video container */
+.video-description {
+    color: #ffffff;
+    /* White text */
+    text-align: center;
+    /* Center the text */
+    margin-bottom: 20px;
+    /* Space below the description */
+    font-size: 16px;
+    /* Adjust font size */
+}
+
+.video iframe {
+    display: block;
+    margin: 0 auto;
+    /* Center the video */
+    border-radius: 10px;
+    /* Rounded corners for the video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow effect */
+}
