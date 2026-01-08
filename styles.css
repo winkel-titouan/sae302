@@ -292,3 +292,91 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Subtle shadow effect */
 }
+
+
+/* Section call-to-action – Réseaux sociaux */
+.section.call-to-action {
+    background-color: #EF4035;
+    padding: 4rem 1.5rem;
+    color: #ffffff;
+}
+
+.section.call-to-action .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Titre sur mesure (sans toucher à ta classe globale h2) */
+.section.call-to-action h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.75rem;
+}
+
+.section.call-to-action h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 0.75rem auto 0;
+    border-radius: 2px;
+}
+
+/* Texte */
+.section.call-to-action p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* Icônes sociales */
+.section.call-to-action .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.section.call-to-action .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.section.call-to-action .social-link img {
+    width: 26px;
+    height: 26px;
+}
+
+.section.call-to-action .social-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .section.call-to-action h2 {
+        font-size: 1.8rem;
+    }
+
+    .section.call-to-action p {
+        font-size: 1rem;
+    }
+
+    .section.call-to-action .social-link {
+        width: 48px;
+        height: 48px;
+    }
+}
